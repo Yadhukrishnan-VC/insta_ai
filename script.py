@@ -138,6 +138,45 @@ class InstaAutomation:
         
     def close(self):
         self.driver.quit()
+        
+    #Profile 
+    # driver.refresh()
+    # driver.get(f'{BASE_URL}{username_inp}/following')
+    # driver.refresh()
+
+    # TO-DO : taking the following list and followers list from the profile or import data and extract
+
+    # time.sleep(1)
+
+    # def scroll_down(driver):
+    #     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+
+    # # Get initial page height
+    # last_height = driver.execute_script("return document.body.scrollHeight")
+
+    # while True:
+    #     # Scroll down to the bottom
+    #     scroll_down(driver)
+        
+    #     # Wait for new content to load
+    #     time.sleep(2)
+        
+    #     # Calculate new page height and compare with last height
+    #     new_height = driver.execute_script("return document.body.scrollHeight")
+        
+    #     if new_height == last_height:
+    #         break
+    #     last_height = new_height
+
+    # # Extract all href attributes from links
+    # links = driver.find_elements(By.TAG_NAME, 'a')
+    # hrefs = [link.get_attribute('href') for link in links]
+    # pdb.set_trace()
+    # button = WebDriverWait(driver, 10).until(
+    #     EC.element_to_be_clickable((By.XPATH, "//button[contains(., 'following')]"))
+    # )
+    # button.click()
+    # time.sleep(2)
 
 if __name__ == "__main__":
     BASE_URL = 'https://www.instagram.com/'
